@@ -1,0 +1,605 @@
+{
+	"info": {
+		"_postman_id": "1043367f-b599-44d0-b559-de041d3dbee1",
+		"name": "walcart",
+		"description": "API document for **walcart** assignment.\n\ncode url: [https://github.com/Sheiblu/walcart-assignment](https://github.com/Sheiblu/walcart-assignment)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "category list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/category/list",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"category",
+						"list"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "category list",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/category/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"category",
+								"list"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1998"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"7ce-e7hFx2LWC/qn6R7zrazi/8lT+LI\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 21 Apr 2022 22:11:52 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"status\": 200,\n    \"message\": \"category list.\",\n    \"data\": [\n        {\n            \"_id\": \"6261c01da469891f697f084f\",\n            \"title\": \"A\",\n            \"parentsCategoryID\": null,\n            \"status\": true,\n            \"createdAt\": \"2022-04-21T20:35:41.985Z\",\n            \"__v\": 0,\n            \"childrenCategory\": [\n                {\n                    \"_id\": \"6261c103a36027cf39ed6f74\",\n                    \"title\": \"A-1\",\n                    \"parentsCategoryID\": \"6261c01da469891f697f084f\",\n                    \"status\": true,\n                    \"createdAt\": \"2022-04-21T20:39:31.918Z\",\n                    \"__v\": 0,\n                    \"childrenCategory\": [\n                        {\n                            \"_id\": \"6261d1639d8e2fc9a310eb8c\",\n                            \"title\": \"A-1-1\",\n                            \"parentsCategoryID\": \"6261c103a36027cf39ed6f74\",\n                            \"status\": true,\n                            \"createdAt\": \"2022-04-21T21:49:23.397Z\",\n                            \"__v\": 0,\n                            \"childrenCategory\": []\n                        }\n                    ]\n                },\n                {\n                    \"_id\": \"6261d573cc2864027dcbde22\",\n                    \"title\": \"A-2\",\n                    \"parentsCategoryID\": \"6261c01da469891f697f084f\",\n                    \"status\": true,\n                    \"createdAt\": \"2022-04-21T22:06:43.243Z\",\n                    \"__v\": 0,\n                    \"childrenCategory\": []\n                },\n                {\n                    \"_id\": \"6261d578cc2864027dcbde26\",\n                    \"title\": \"A-3\",\n                    \"parentsCategoryID\": \"6261c01da469891f697f084f\",\n                    \"status\": true,\n                    \"createdAt\": \"2022-04-21T22:06:48.820Z\",\n                    \"__v\": 0,\n                    \"childrenCategory\": [\n                        {\n                            \"_id\": \"6261d582cc2864027dcbde2a\",\n                            \"title\": \"A-3-1\",\n                            \"parentsCategoryID\": \"6261d578cc2864027dcbde26\",\n                            \"status\": true,\n                            \"createdAt\": \"2022-04-21T22:06:58.771Z\",\n                            \"__v\": 0,\n                            \"childrenCategory\": []\n                        },\n                        {\n                            \"_id\": \"6261d589cc2864027dcbde31\",\n                            \"title\": \"A-3-2\",\n                            \"parentsCategoryID\": \"6261d578cc2864027dcbde26\",\n                            \"status\": true,\n                            \"createdAt\": \"2022-04-21T22:07:05.188Z\",\n                            \"__v\": 0,\n                            \"childrenCategory\": []\n                        },\n                        {\n                            \"_id\": \"6261d58dcc2864027dcbde35\",\n                            \"title\": \"A-3-3\",\n                            \"parentsCategoryID\": \"6261d578cc2864027dcbde26\",\n                            \"status\": true,\n                            \"createdAt\": \"2022-04-21T22:07:09.089Z\",\n                            \"__v\": 0,\n                            \"childrenCategory\": [\n                                {\n                                    \"_id\": \"6261d6505a68f9d0f66847f7\",\n                                    \"title\": \"A-3-3-A\",\n                                    \"parentsCategoryID\": \"6261d58dcc2864027dcbde35\",\n                                    \"status\": true,\n                                    \"createdAt\": \"2022-04-21T22:10:24.751Z\",\n                                    \"__v\": 0,\n                                    \"childrenCategory\": []\n                                },\n                                {\n                                    \"_id\": \"6261d6555a68f9d0f66847fb\",\n                                    \"title\": \"A-3-3-B\",\n                                    \"parentsCategoryID\": \"6261d58dcc2864027dcbde35\",\n                                    \"status\": true,\n                                    \"createdAt\": \"2022-04-21T22:10:29.168Z\",\n                                    \"__v\": 0,\n                                    \"childrenCategory\": []\n                                }\n                            ]\n                        }\n                    ]\n                }\n            ]\n        },\n        {\n            \"_id\": \"6261c02aa469891f697f0856\",\n            \"title\": \"B\",\n            \"parentsCategoryID\": null,\n            \"status\": true,\n            \"createdAt\": \"2022-04-21T20:35:54.185Z\",\n            \"__v\": 0,\n            \"childrenCategory\": []\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "category add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"C\",\r\n    \"parents_cat_id\": \"62626e4a5aa8b0f1474bc1a0\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/category/add",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"category",
+						"add"
+					]
+				},
+				"description": "Use this collection for create category.  \n  \n**\\--- field ---**\n\ntitle: required\n\nStartFragment\n\nparents_cat_id: ( pass parents category id, id category has no parents category, pass null)\n\nEndFragment"
+			},
+			"response": [
+				{
+					"name": "category add",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"A-3-3-B\",\r\n    \"parents_cat_id\": \"6261d58dcc2864027dcbde35\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/category/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"category",
+								"add"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "225"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"e1-W37yrcmorHN3g0rq/Pc/RjpAJjU\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 21 Apr 2022 22:10:29 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"status\": 201,\n    \"message\": \"category added.\",\n    \"data\": {\n        \"title\": \"A-3-3-B\",\n        \"parentsCategoryID\": \"6261d58dcc2864027dcbde35\",\n        \"status\": true,\n        \"_id\": \"6261d6555a68f9d0f66847fb\",\n        \"createdAt\": \"2022-04-21T22:10:29.168Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "category search",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/category/search/B",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"category",
+						"search",
+						"B"
+					]
+				},
+				"description": "Use this for search category\n\nStartFragment\n\n{{base_url}}/category/search/**B**\n\nEndFragment\n\nThis **B** is the **search value**(category title)"
+			},
+			"response": [
+				{
+					"name": "category search",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/category/search/A-1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"category",
+								"search",
+								"A-1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "381"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"17d-0hJoS3IAiylGFQV4Q1Cc5Oy3tjM\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 21 Apr 2022 20:43:14 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"status\": 200,\n    \"message\": \"category found. h\",\n    \"data\": {\n        \"_id\": \"6261c103a36027cf39ed6f74\",\n        \"title\": \"A-1\",\n        \"parentsCategoryID\": \"6261c01da469891f697f084f\",\n        \"status\": true,\n        \"createdAt\": \"2022-04-21T20:39:31.918Z\",\n        \"__v\": 0,\n        \"parentsCategoryDetails\": {\n            \"_id\": \"6261c01da469891f697f084f\",\n            \"title\": \"A\",\n            \"parentsCategoryID\": null,\n            \"status\": true,\n            \"createdAt\": \"2022-04-21T20:35:41.985Z\",\n            \"__v\": 0\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "category update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"B\",\r\n    \"id\": \"626270775aa8b0f1474bc1da\",\r\n    \"parents_cat_id\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/category/update",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"category",
+						"update"
+					]
+				},
+				"description": "**Use it for update category.**\n\n##### \\--field --\n\nid: **required**\n\ntitle, parents_cat_id : is **not required**, field. If need to update then pass value, or remove the property in api call time.\n\nEndFragment"
+			},
+			"response": [
+				{
+					"name": "category update",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"A\",\r\n    \"id\": \"6261d582cc2864027dcbde2a\",\r\n    \"parents_cat_id\": \"6261d578cc2864027dcbde26\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/category/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"category",
+								"update"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "231"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"e7-hwAV3xClZ8qsuS8ZVlvmjImcoL8\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 21 Apr 2022 22:09:50 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"status\": 200,\n    \"message\": \"category title updated.\",\n    \"data\": {\n        \"_id\": \"6261d58dcc2864027dcbde35\",\n        \"title\": \"A-3-3\",\n        \"parentsCategoryID\": \"6261d578cc2864027dcbde26\",\n        \"status\": true,\n        \"createdAt\": \"2022-04-21T22:07:09.089Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "category change access status",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"626270775aa8b0f1474bc1da\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/category/change-status",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"category",
+						"change-status"
+					]
+				},
+				"description": "Use this for, disable / enable category\n\nid: required field"
+			},
+			"response": [
+				{
+					"name": "category update",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"A\",\r\n    \"id\": \"6261d582cc2864027dcbde2a\",\r\n    \"parents_cat_id\": \"6261d578cc2864027dcbde26\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/category/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"category",
+								"update"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "231"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"e7-hwAV3xClZ8qsuS8ZVlvmjImcoL8\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 21 Apr 2022 22:09:50 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"status\": 200,\n    \"message\": \"category title updated.\",\n    \"data\": {\n        \"_id\": \"6261d58dcc2864027dcbde35\",\n        \"title\": \"A-3-3\",\n        \"parentsCategoryID\": \"6261d578cc2864027dcbde26\",\n        \"status\": true,\n        \"createdAt\": \"2022-04-21T22:07:09.089Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "delete category",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"62627908555c3e0ea52e90ff\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/category/delete",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"category",
+						"delete"
+					]
+				},
+				"description": "Use this for delete category\n\nid: required field"
+			},
+			"response": [
+				{
+					"name": "category update",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"A\",\r\n    \"id\": \"6261d582cc2864027dcbde2a\",\r\n    \"parents_cat_id\": \"6261d578cc2864027dcbde26\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/category/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"category",
+								"update"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "231"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"e7-hwAV3xClZ8qsuS8ZVlvmjImcoL8\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 21 Apr 2022 22:09:50 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"status\": 200,\n    \"message\": \"category title updated.\",\n    \"data\": {\n        \"_id\": \"6261d58dcc2864027dcbde35\",\n        \"title\": \"A-3-3\",\n        \"parentsCategoryID\": \"6261d578cc2864027dcbde26\",\n        \"status\": true,\n        \"createdAt\": \"2022-04-21T22:07:09.089Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:3001/api",
+			"type": "string"
+		}
+	]
+}
