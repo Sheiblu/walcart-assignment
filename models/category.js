@@ -1,7 +1,7 @@
 const { mongoose } = require('../db-connection/mongodb');
 let ObjectID = new mongoose.Types.ObjectId();
 
-var Category = mongoose.model('Category', {
+let Category = mongoose.model('Category', {
     title: {
         type: String,
         required: true,

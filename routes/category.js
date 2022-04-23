@@ -3,7 +3,7 @@ const express = require("express");
 const isEmpty = require("is-empty");
 const router = express.Router();
 
-var { Category } = require('../models/category');
+let { Category } = require('../models/category');
 const { client } = require('../db-connection/redis');
 const { ObjectID } = require('mongodb');
 
@@ -30,7 +30,7 @@ router.get('/list', async (req, res) => {
 });
 
 router.post('/add', async (req, res) => {
-    var category = new Category({
+    let category = new Category({
         title: req.body.title,
         parentsCategoryID: req.body.parents_cat_id,
         createdAt: new Date()
@@ -50,7 +50,7 @@ router.post('/add', async (req, res) => {
         // if get error from mongoose, return error message
         const errorLength = Object.keys(error.errors).length;
         const errorKeys = Object.keys(error.errors);
-        var errorMessage = "";
+        let errorMessage = "";
 
         for (let index = 0; index < errorLength; index++) {
             errorMessage += error.errors[errorKeys[index]].message + " ";
@@ -66,7 +66,7 @@ router.post('/add', async (req, res) => {
 });
 
 router.get('/search/:value', async (req, res) => {
-    var value = req.params.value;
+    let value = req.params.value;
     let data = await getCashCategoryDetailByTitle(value);
 
     try {
@@ -108,7 +108,7 @@ router.get('/search/:value', async (req, res) => {
 });
 
 router.put('/update', async (req, res) => {
-    var id = req.body.id;
+    let id = req.body.id;
 
     let body = {
         title: req.body.title,
@@ -174,7 +174,7 @@ router.put('/update', async (req, res) => {
 
         const errorLength = Object.keys(error.errors).length;
         const errorKeys = Object.keys(error.errors);
-        var errorMessage = "";
+        let errorMessage = "";
 
         for (let index = 0; index < errorLength; index++) {
             errorMessage += error.errors[errorKeys[index]].message + " ";
@@ -190,7 +190,7 @@ router.put('/update', async (req, res) => {
 });
 
 router.put('/change-status', async (req, res) => {
-    var id = req.body.id;
+    let id = req.body.id;
 
     if (!ObjectID.isValid(id)) {
         return res.status(404).send({
@@ -230,7 +230,7 @@ router.put('/change-status', async (req, res) => {
 
         const errorLength = Object.keys(error.errors).length;
         const errorKeys = Object.keys(error.errors);
-        var errorMessage = "";
+        let errorMessage = "";
 
         for (let index = 0; index < errorLength; index++) {
             errorMessage += error.errors[errorKeys[index]].message + " ";
@@ -246,7 +246,7 @@ router.put('/change-status', async (req, res) => {
 });
 
 router.put('/delete', async (req, res) => {
-    var id = req.body.id;
+    let id = req.body.id;
 
     if (!ObjectID.isValid(id)) {
         return res.status(400).send({
@@ -285,7 +285,7 @@ router.put('/delete', async (req, res) => {
 
         const errorLength = Object.keys(error.errors).length;
         const errorKeys = Object.keys(error.errors);
-        var errorMessage = "";
+        let errorMessage = "";
 
         for (let index = 0; index < errorLength; index++) {
             errorMessage += error.errors[errorKeys[index]].message + " ";
